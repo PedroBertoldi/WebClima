@@ -1,0 +1,56 @@
+﻿@using WebClima.Models;
+<script src="~/Scripts/webClimaScripts.js" type="text/javascript" defer></script>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header text-white bg-primary">
+                Cidades mais quentes hoje
+            </div>
+            <div class="card-body">
+                @foreach (PrevisaoClima item in ViewBag.Maiores)
+                {
+                <div class="d-flex col">
+                    <span>@item.Cidade.Nome</span>
+                    <span class="ms-auto me-2">Min @item.TemperaturaMinima Cº</span>
+                    <span>Max @item.TemperaturaMaxima Cº</span>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header text-white bg-primary">
+                Cidades mais frias hoje
+            </div>
+            <div class="card-body">
+                @foreach (PrevisaoClima item in ViewBag.Menores)
+                {
+                    <div class="d-flex col">
+                        <span>@item.Cidade.Nome</span>
+                        <span class="ms-auto me-2">Min @item.TemperaturaMinima Cº</span>
+                        <span>Max @item.TemperaturaMaxima Cº</span>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row my-3">
+    <label for="cidade">Selecione uma cidade: </label>
+    <div class="col-6">
+        <input type="text" class="form-control" list="cidade-lista" id="cidade" multiple="multiple"/>
+        <datalist id="cidade-lista">
+            <option disabled selected value="">-- Selecione uma cidade --</option>
+            @foreach (string item in ViewBag.Cidades)
+            {
+                <option value="@item">@item</option>
+            }
+        </datalist>
+    </div>
+</div>
+<div class="row">
+    <span id="linha-previsao"></span>
+    <div class="row" id="body-previsao">
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClima", "WebClima\WebClima.csproj", "{2574949F-C9E4-49B5-B2E9-04549B737B26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2574949F-C9E4-49B5-B2E9-04549B737B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2574949F-C9E4-49B5-B2E9-04549B737B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2574949F-C9E4-49B5-B2E9-04549B737B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2574949F-C9E4-49B5-B2E9-04549B737B26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F262E30A-0673-4746-93A2-95D72C164088}
+	EndGlobalSection
+EndGlobal
